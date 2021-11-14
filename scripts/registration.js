@@ -1,7 +1,7 @@
 
 $(function () {
     $('#registerbtn').click(function (e) {
-        // e.preventDefault();
+        e.preventDefault();
         let fullname = $('#registerFullName').val();
         let email = $('#registerEmail').val();
         let password = $('#registerPassword').val();
@@ -10,9 +10,12 @@ $(function () {
         } else {
             $.ajax({
                 type: "POST",
-                url: "../php/registrationProcess.php",
+                url: "./php/registrationProcess.php",
                 data: { fullname: fullname, email: email, password: password },
-                success: (data) => { alert(data) },
+                success: (data) => {
+                    alert(data);
+                    window.location.replace("login.php");
+                },
                 error: (data) => { alert("check details and try again") }
             });
         }

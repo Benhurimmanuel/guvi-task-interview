@@ -9,7 +9,7 @@ $(function () {
         let email = $('#updateEmail').val();
         $.ajax({
             type: "POST",
-            url: "../php/updateDetails.php",
+            url: "./php/updateDetails.php",
             data: { fullname: fullname, dob: dob, email: email, age: age, contact: contact },
             success: (data) => {
                 console.log(fullname, dob, age, contact, email)

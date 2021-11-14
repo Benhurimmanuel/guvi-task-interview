@@ -1,16 +1,20 @@
 <?php
-$servername = "localhost";
-$db_user = "root";
-$db_pass = "";
-$db_name ="guvi_task";
+//local db 
+// $host="localhost";
+// $user="root";
+// $password="";
+// $db="guvi_task";
 
+//remote db
+$host="remotemysql.com";
+$user="S2EOZJwt35";
+$password="8E9AjGJefc";
+$db="S2EOZJwt35";
 
-// Create connection
-$conn = mysqli_connect($servername, $db_user, $db_pass,$db_name);
+$conn=mysqli_connect($host,$user,$password,$db);
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-// echo "Connected successfully";
+  if(!$conn){
+    echo"error in connection".mysqli_connect_error();	
+  }
+  // echo "Connected successfully";
 ?>

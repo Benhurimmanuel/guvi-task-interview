@@ -26,7 +26,7 @@
 
     <?php include("includes/footer.php")?>
 
-    <script src="../scripts/login.js"></script>
+    <script src="./scripts/login.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <?php include("./includes/header.php")?>
-<?php include("../php/homePageProcess.php") ?>
+<?php include("./php/homePageProcess.php") ?>
 
 <div class="container mt-5">
     <div class="row">
@@ -9,7 +9,7 @@
             </h2>
             <div>
                 <span>
-                    <a href="../php/logout.php" aria-describedby="loginHelp">Logout
+                    <a href="./php/logout.php" aria-describedby="loginHelp">Logout
                     </a>
                 </span>
             </div>
@@ -107,7 +107,7 @@
         </div> 
     </div>
     <?php include("includes/footer.php")?>
-    <script src="../scripts/updateDetails.js"></script>
+    <script src="./scripts/updateDetails.js"></script>
     </body>
 
     </html>

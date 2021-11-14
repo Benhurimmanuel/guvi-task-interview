@@ -1,7 +1,6 @@
 $(function () {
     $('#loginbtn').click(function (e) {
-        // e.preventDefault();
-
+        e.preventDefault();
         let email = $('#loginEmail').val();
         let password = $('#loginPassword').val();
         if (email === "" || password === "") {
@@ -9,12 +8,11 @@ $(function () {
         } else {
             $.ajax({
                 type: "POST",
-                url: "../php/loginProcess.php",
+                url: "./php/loginProcess.php",
                 data: { email: email, password: password },
                 success: (data) => {
                     if (data == true) {
-                        alert(data)
-                        // window.location.replace("../module/homepage.php");
+                        window.location.replace("homepage.php");
                     }
                 },
                 error: (data) => { alert("check details and try again") }

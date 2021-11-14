@@ -1,0 +1,1 @@
+CREATE TABLE `guvi_task`.`user` ( `id` INT(2) NOT NULL AUTO_INCREMENT , `fullName` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `password` VARCHAR(50) NOT NULL , `age` VARCHAR(2) NOT NULL , `contact` VARCHAR(10) NOT NULL , `dob` VARCHAR(12) NOT NULL , PRIMARY KEY (`email`), UNIQUE (`id`)) ENGINE = InnoDB;

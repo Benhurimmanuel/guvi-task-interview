@@ -1,4 +1,4 @@
-<?php include("includes/header.php")?>
+<?php include("includes/header.php");?>
 
 
     <div class="container">
@@ -32,7 +32,7 @@
 
 
     <?php include("includes/footer.php")?>
-    <script src="../scripts/registration.js"></script>
+    <script src="./scripts/registration.js"></script>
 </body>
 
 </html>
