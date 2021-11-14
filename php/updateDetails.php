@@ -18,6 +18,6 @@
     }
  }
 // }else{
-//     header("Location:../module/index.php");
+//     header("Location:../index.php");
 // }
 ?>

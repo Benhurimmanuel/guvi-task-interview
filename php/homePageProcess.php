@@ -17,6 +17,6 @@ if(mysqli_num_rows($result)>0){
     }else{
             echo('user Not Registered, Please Try Again');
 }}else{
-    header("Location:../module/index.php");
+    header("Location:../index.php");
 }
 ?>

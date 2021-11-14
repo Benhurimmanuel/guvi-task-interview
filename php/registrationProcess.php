@@ -16,7 +16,7 @@ if(isset($_POST)) {
     $result2= mysqli_query($conn,$query2);
     echo("asdfads");
     if(mysqli_num_rows($result2) > 0){
-        header("Location:../module/homepage.php");
+        header("Location:../homepage.php");
     }else{
         echo('user Not Registered, Please Try Again');
     }
