@@ -8,8 +8,9 @@
                 <?php echo $fullname ?>
             </h2>
             <div>
-                <span>
-                    <a href="./php/logout.php" aria-describedby="loginHelp">Logout
+                <span><a href ="php/createjson.php" target="_blank" id="createjsonbtn" type="submit" >Generate Json file</button></span>
+
+                <span>  <a href="./php/logout.php" aria-describedby="loginHelp">Logout
                     </a>
                 </span>
             </div>
@@ -52,6 +53,8 @@
 
                         <button data-toggle="modal" data-target="#myModal" type="submit" class="btn mt-5"
                             name="edit">Edit</button>
+
+                            
                     </div>
                 </div>
             </div>
@@ -100,6 +103,7 @@
                 </div>
                 <div class="modal-footer">
                     <button id="updatebtn" type="submit" class="btn btn-default ">Update</button>
+                   
 
                 </div>
             </div>
