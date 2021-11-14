@@ -1,7 +1,7 @@
 
 $(function () {
     $('#registerbtn').click(function (e) {
-        // e.preventDefault();
+         e.preventDefault();
         let fullname = $('#registerFullName').val();
         let email = $('#registerEmail').val();
         let password = $('#registerPassword').val();
