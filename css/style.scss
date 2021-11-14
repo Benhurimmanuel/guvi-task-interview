@@ -1,0 +1,136 @@
+@mixin card {
+    background-color: rgba(255,255,255,0.13);
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    
+}
+@mixin btn{
+    background-color: #00FFFF;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body{
+    background-color: #080710;
+}
+
+ol{
+    list-style-type: none;
+}
+form{
+    @include card();
+    margin-top: 8px;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    
+}
+
+label{
+    display: inline-flex;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btn{
+    @include btn();
+    margin-top: 50px;
+    width: 100%;
+}
+
+a{
+    margin-left:5px ;
+}
+a:hover{
+    color: cadetblue;
+}
+.homepageTitle{
+    color:#ffffff
+}
+.card{
+   @include card();
+}
+.card-title{
+    border-bottom: 1px solid #00FFFF;
+   
+}
+.card-subtitle{
+
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.card-subtitle .details{
+    color:#c187cf
+}
+.card button{
+    margin-left: auto;
+    margin-right: auto;
+    @include btn();
+}
+.modal-content{
+    @include card();
+    backdrop-filter: blur(20px);
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+  
+}
+.modal-footer #updatebtn{
+    @include btn();
+}
+
+
+@media (min-width:210px) and (max-width: 450px) {
+    form{
+        margin-top: 10px;
+        margin-left: 5px;
+        background-color: rgba(255,255,255,0.13);
+        border-radius: 10px;
+        border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);
+        
+    }
+       
+    label{
+        display: inline-flex;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input{
+        display: block;
+        height: 30px;
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .offset3 ,.col-6{
+        width:100%;
+        margin-left: 0;
+    }
+}

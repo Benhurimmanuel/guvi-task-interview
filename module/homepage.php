@@ -1,0 +1,113 @@
+<?php include("./includes/header.php")?>
+<?php include("../php/homePageProcess.php") ?>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="d-flex justify-content-between">
+            <h2 class=homepageTitle>Welcome
+                <?php echo $fullname ?>
+            </h2>
+            <div>
+                <span>
+                    <a href="../php/logout.php" aria-describedby="loginHelp">Logout
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="offset-3 col-6 mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">User Details</h3>
+                    <div class="row">
+                        <h5 class="card-subtitle mb-2 text-muted">Fullname : <span class="details">
+                                <?php echo $fullname ?>
+                            </span></h5>
+                    </div>
+                    <div class="row">
+                        <h5 class="card-subtitle mb-2 text-muted">Email : <span class="details">
+                                <?php echo $email ?>
+                            </span></h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="card-subtitle mb-2 text-muted">Age : <span class="details">
+                                    <?php echo $age ?>
+                                </span></h5>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="card-subtitle mb-2 text-muted">DOB : <span class="details">
+                                    <?php echo $DOB ?>
+                                </span></h5>
+                            <div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5 class="card-subtitle mb-2 text-muted">Contact : <span class="details">
+                                    <?php echo $contact ?>
+                                </span></h5>
+                        </div>
+
+                        <button data-toggle="modal" data-target="#myModal" type="submit" class="btn mt-5"
+                            name="edit">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Update Details</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class=" mb-3">
+                            <label for="updateFullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" value="<?php echo $fullname ?>"
+                                name="updateFullName" id="updateFullName" />
+                        </div>
+                        <div class=" mb-3">
+                            <label for="updateDob" class="form-label">DOB</label>
+                            <input type="date" class="form-control" value="<?php echo $dob ?>" name="updateDob"
+                                id="updateDob" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="updateAge" class="form-label">Age</label>
+                            <input type="number" max=100 class="form-control" id="updateAge"
+                                value="<?php echo $age ?>" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="updateEmail" class="form-label">Email</label>
+                            <input type="email" max=100 class="form-control" id="updateEmail"
+                                value="<?php echo $email ?>" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="updatePhone" class="form-label">Contact</label>
+                            <input type="tel" minlength=10 maxlength=10 id="updatePhone" class="form-control"
+                                name="updatePhone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="<?php echo $contact ?>">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="updatebtn" type="submit" class="btn btn-default ">Update</button>
+
+                </div>
+            </div>
+
+        </div> 
+    </div>
+    <?php include("includes/footer.php")?>
+    <script src="../scripts/updateDetails.js"></script>
+    </body>
+
+    </html>
