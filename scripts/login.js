@@ -14,7 +14,7 @@ $(function () {
                     if (data == true) {
                         window.location.replace("homepage.php");
                     } else {
-                        alert("check details and try again")
+                        alert("user does not exist, please try again")
                     }
                 },
                 error: (data) => { alert("check details and try again") }

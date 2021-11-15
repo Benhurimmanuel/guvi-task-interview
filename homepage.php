@@ -81,12 +81,12 @@
                         <div class=" mb-3">
                             <label for="updateDob" class="form-label">DOB</label>
                             <input type="date" class="form-control" value="<?php echo $dob ?>" name="updateDob"
-                                id="updateDob" />
+                                id="updateDob" required/>
                         </div>
                         <div class="mb-3">
                             <label for="updateAge" class="form-label">Age</label>
                             <input type="number" max=100 class="form-control" id="updateAge"
-                                value="<?php echo $age ?>" />
+                                value="<?php echo $age ?>" disabled />
                         </div>
                         <div class="mb-3">
                             <label for="updateEmail" class="form-label">Email</label>

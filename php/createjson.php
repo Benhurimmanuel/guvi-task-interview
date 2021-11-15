@@ -18,7 +18,7 @@ return json_encode($userData);
 }
 $fileName="../json/user".".json";
 if(file_put_contents($fileName,getData())){
-//     echo ($fileName.' file Created');
+    // echo ($fileName.' file Created');
     echo(getData());
 }else{
     echo ($fileName.'file could not Created');
