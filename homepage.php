@@ -81,7 +81,7 @@
                         <div class=" mb-3">
                             <label for="updateDob" class="form-label">DOB</label>
                             <input type="date" class="form-control" value="<?php echo $dob ?>" name="updateDob"
-                                id="updateDob" required/>
+                                id="updateDob" required />
                         </div>
                         <div class="mb-3">
                             <label for="updateAge" class="form-label">Age</label>

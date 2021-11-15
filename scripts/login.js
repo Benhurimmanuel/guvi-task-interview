@@ -14,7 +14,7 @@ $(function () {
                     if (data == true) {
                         window.location.replace("homepage.php");
                     } else {
-                        alert("user does not exist, please try again")
+                        alert("emailId and password do not match ")
                     }
                 },
                 error: (data) => { alert("check details and try again") }
