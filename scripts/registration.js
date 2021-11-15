@@ -14,7 +14,7 @@ $(function () {
                 data: { fullname: fullname, email: email, password: password },
                 success: (data) => {
                     alert(data);
-                    window.location.replace("login.php");
+                    window.location.replace("login.html");
                 },
                 error: (data) => { alert("check details and try again") }
             });

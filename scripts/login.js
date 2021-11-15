@@ -12,7 +12,7 @@ $(function () {
                 data: { email: email, password: password },
                 success: (data) => {
                     if (data == true) {
-                        window.location.replace("homepage.php");
+                        window.location.replace("homepage.html");
                     } else {
                         alert("emailId and password do not match ")
                     }
